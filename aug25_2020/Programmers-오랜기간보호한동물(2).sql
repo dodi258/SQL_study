@@ -1,0 +1,7 @@
+# https://programmers.co.kr/learn/courses/30/lessons/59411
+
+SELECT `OUT`.`ANIMAL_ID`, `OUT`.`NAME`
+FROM ANIMAL_INS AS `IN`
+JOIN ANIMAL_OUTS AS `OUT`
+ON `IN`.`ANIMAL_ID` = `OUT`.`ANIMAL_ID`
+ORDER BY `OUT`.`DATETIME` - `IN`.`DATETIME` DESC LIMIT 2; 
